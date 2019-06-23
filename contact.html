@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8"/>
+      <meta name="author" content="Nikhil Koneru" />
+      <meta name="description" content="Anika Sytems">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <link rel="icon" href="images/logosmall.png">
+	<title>Anika Systems</title>
+	
+	<!-- Royal Preloader CSS -->
+	<link href="css/royal_preloader.css" rel="stylesheet">
+
+	<!-- jQuery Files -->
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<link href="https://fonts.googleapis.com/css?family=Cinzel:700" rel="stylesheet">
+	<!-- Parallax File -->
+	<script type="text/javascript" src="js/parallax.min.js"></script>
+<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:700i" rel="stylesheet">
+<script src="https://smtpjs.com/v3/smtp.js">
+</script>
+    <style type="text/css">
+
+
+
+
+.btn-outline-success {
+	margin-top: 15px!important;
+    border-width: 2px!important;
+    background-color: white;
+    color: #fe0010;
+    border-color: #fe0010!important;
+    border-radius: 40px!important;
+    width: 140px;
+    height: 45px;
+    font-size: 14px!important;
+    font-weight: 700!important;
+    font-family: 'Montserrat', sans-serif!important;
+    text-transform: uppercase!important;
+    padding: 10px 15px!important;
+    letter-spacing: .8px!important;
+    
+
+}
+.btn-outline-success:hover {
+    color: white!important;
+    font-size: 15px;
+    font-weight: 800;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    padding: 10px 15px;
+    letter-spacing: .8px;
+}
+.dropdown-item {
+    position: relative;
+    padding: 10px 20px;
+    border-bottom: 0px;
+}
+.app-header .nav-item .nav-link {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background: 0;
+    border: 0;
+}
+
+.header-fixed .app-header{
+    position: fixed;
+    z-index: 1020;
+    width: 100%;
+    height: 80px;
+}
+.navbar-nav>li>.dropdown-menu {
+    margin-top: 20px;
+    position: absolute;
+    z-index: 0px;
+    padding: 0px;
+}
+
+
+.dropdown-menu.subwok {
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 100;
+  -webkit-box-shadow: 0px 10px 10px #777;
+  -moz-box-shadow: 0px 10px 10px #777;
+  box-shadow: 0px 10px 10px #777;
+  
+}
+.navbar-nav .nav-link:hover {
+   
+}
+
+.navbar-default .navbar-nav > li > a {
+    font-size: 14px;
+    font-weight: 700;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+  /*  padding: 10px 15px;*/
+    letter-spacing: .8px;
+}
+.dropdown-menu > li > a {
+    font-size: 13px;
+    font-weight: 500;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: capitalize;
+    /*padding: 8px 15px;*/
+    letter-spacing: .8px;
+}
+.dropdown-item{
+    font-size: 12px;
+    font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    padding: 10px 15px;
+    letter-spacing: .8px;
+}
+.navbar-nav > li{
+  padding-left:10px;
+  padding-right:10px;
+}
+button.btn.btn-outline-success.my-2.my-sm-0:hover {
+    background: red;
+    border: red;
+}
+.dropdown-submenu {
+  position: relative;
+}
+
+.dropdown-submenu .dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: -1px;
+}
+
+.indextsize{
+	font-family: "Avenir Next", Avenir Next;
+	font-size: 60px!important;
+	font-weight: bold;
+}
+.subtsize{
+	font-family: "Avenir Next", Avenir Next!important;
+	font-size: 20px!important;
+	font-weight: bold!important;
+}
+.indexscsize{
+	
+    font-weight: bold!important;
+}
+
+.headingindex{
+	
+    font-weight: bold!important;
+    font-size: 20px!important;
+
+}
+.txtoa b{
+
+    font-weight: 300;
+    font-size: 20px!important;
+
+}
+.black{
+	background-color: black!important;
+}
+
+
+
+</style>
+	<!-- Stylesheets -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<!-- <link href="css/bootstrap.min.css" rel="stylesheet"> -->
+	<link href="css/ionicons.min.css" rel="stylesheet">
+	<link href="css/pe-icon-7-stroke.css" rel="stylesheet">
+	<link href="css/magnific-popup.css" rel="stylesheet">
+	<link href="css/logoiconfont.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/font.css">
+	<!-- Style Switcher / remove for production -->
+	<link href="css/style-switcher.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+	<!-- Alternate Stylesheets / choose what color and base you want and include the 2 files regularly AFTER style.css above -->
+
+	<link rel="stylesheet" type="text/css" href="css/colors/red.css" title="red">
+  
+</head>
+<body class="" data-spy="scroll" data-target=".navbar" data-offset="70">
+	
+
+
+
+	<!-- Begin Header -->
+		<!-- Begin Header -->
+	<header>
+		<!-- Begin Navigation -->
+		<nav class="navbar navbar-default navbar-fixed-top">
+			<div class="container-fluid">
+				<div class="row">
+					<!-- Brand and toggle get grouped for better mobile display -->
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+							<span class="sr-only">Toggle navigation</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+						<a class="navbar-brand scroll-link" href="#home" data-id="home"><img style="position: absolute; top: 8px;" src="images/Logo.png" width="200px"></a>
+					</div>
+
+					<!-- Collect the nav links, forms, and other content for toggling -->
+					<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+						<ul class="nav navbar-nav navbar-right">
+							<li><a href="index.html" data-id="home" style="color: white;"><b>Home</b></a></li>
+							<li><a href="capabilities.html" data-id="home" style="color: white;"><b>Capabilities</b></a></li>
+						
+							
+								
+               
+                <li><a href="whoweare.html" data-id="home" style="color: white;"><b>Who We Are</b></a></li>
+                 <li><a href="careers.html" data-id="home" style="color: white;"><b>Careers</b></a></li>
+							<li>
+        <button class="btn btn-outline-success my-2 my-sm-0"  type="submit">Contact</button>
+      </li>
+						</ul>
+					</div><!-- /.navbar-collapse -->
+				</div>
+			</div><!-- /.container-fluid -->
+		</nav>
+		<!-- End Navigation -->
+	</header>
+	<!-- End Header -->
+	<!-- End Header -->
+
+	<section id="contact" class="background2 section-padding">
+		<div class="container">
+			<div class="row mb30">
+				<div class="col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2 col-lg-6 col-lg-offset-3 section-title text-center">
+					<h2>Contact</h2>
+					<span class="section-divider mb15"></span>
+				</div><!-- /.column -->
+			</div><!-- /.row -->
+			<div class="row">
+				<div class="col-sm-5 col-lg-4">
+
+					<h5 class="heading-1 mb20">Visit Us</h5>
+          <h4 class="mb15"><b>161 Fort Evans Rd NE,<br> Suite 250,Leesburg VA 20176<b></h4>
+					<h4 class="mb15"><strong class="text-switch">Email: info@anikasystems.com </strong></h5>
+          <h4 class="mb15"><strong class="text-switch">Phone: +1 703-244-0158</strong></h5>
+				</div><!-- /.column -->
+				<div class="col-sm-6 col-lg-7 mt30-xs">
+					<form data-toggle="validator" id="contactForm" name="contactForm" action="contact.html">
+						<div class="row">
+							<div class="col-sm-6">
+								<div class="form-group">
+									<div class="controls">
+										<input class="form-control" data-error="This section is required."
+										id="msg_subject" placeholder="Subject *" required="" type="text">
+										<div class="help-block with-errors"></div>
+									</div>
+								</div>
+							</div><!-- /.column -->
+							<div class="col-sm-6">
+								<div class="form-group">
+									<div class="controls">
+										<input class="form-control" id="phone" placeholder="Phone" type="text">
+									</div>
+								</div>
+							</div><!-- /.column -->
+						</div><!-- /.row -->
+						<div class="row mb10">
+							<div class="col-sm-6">
+								<div class="form-group">
+									<div class="controls">
+										<input class="form-control" data-error="This section is required." id="name" placeholder="Your Name *" required="" type="text">
+										<div class="help-block with-errors"></div>
+									</div>
+								</div>
+							</div><!-- /.column -->
+							<div class="col-sm-6">
+								<div class="form-group">
+									<div class="controls">
+										<input class="email form-control" data-error="This section is required." id="email" placeholder="Email *" required="" type="email">
+										<div class="help-block with-errors"></div>
+									</div>
+								</div>
+							</div><!-- /.column -->
+						</div><!-- /.row -->
+						<div class="row">
+							<div class="col-sm-12">
+								<div class="form-group">
+									<div class="controls">
+										<textarea class="form-control" data-error="This section is required." id="message" placeholder="Message *" required="" rows="5"></textarea>
+										<div class="help-block with-errors"></div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="row mt15">
+							<div class="col-sm-6">
+								<div id="msgSubmit" class="h4 hidden mt10 no-margin-bottom"></div> 
+							</div><!-- /.column -->
+							<div class="col-sm-6 text-right">
+								<button type="submit" id="submit" class="btn btn-default btn-lg">Send</button>
+							</div><!-- /.column -->
+						</div><!-- /.row -->
+					</form><!-- /.form -->
+				</div><!-- /.column -->
+			</div><!-- /.row -->
+		</div><!-- /.container -->
+	</section><!-- /.section -->
+	
+
+<footer class=" footer-padding" style="background-color: white">
+         <div class="container">
+            <div class="row mb30">
+               <!-- Logo -->
+               <div class="col-sm-3">
+                  <!-- <span class="icon-handle-streamline-vector logo"></span> -->
+                  <img src="images/Logo.png" width="200px">
+                  <p class="no-margin text-switch" style="color: black;">
+                     At Anika Systems, we are more than a technology consulting firm. We view our clients as partners and actively collaborate with them to achieve long-term success and make a significant contribution to their mission goals.
+                  </p>
+               </div>
+               <!-- /.column -->
+               <!-- Social -->
+               <div class="col-sm-3 mt30-xs">
+                  <h5 class="heading-1 mb20" style="color: black;">Social</h5>
+                  <ul class="list-inline">
+                     <li><a href="https://www.linkedin.com/company/anika-systems/about/" style="display: block;
+                        background-color: red;
+                        height: 40px;
+                        width: 40px;
+                        border-radius: 100%;
+                        font-size: 20px;
+                        text-align: center;
+                        line-height: 40px;
+                        color: white;
+                        outline: none;
+                        margin-bottom: 15px;
+                        -webkit-transition: all 0.4s;
+                        -moz-transition: all 0.4s;
+                        transition: all 0.4s;"><i class="fab fa-linkedin"></i></a></li>
+                     <li><a href="https://medium.com/@anikasystemsinc" style="display: block;
+                        background-color: red;
+                        height: 40px;
+                        width: 40px;
+                        border-radius: 100%;
+                        font-size: 20px;
+                        text-align: center;
+                        line-height: 40px;
+                        color: white;
+                        outline: none;
+                        margin-bottom: 15px;
+                        -webkit-transition: all 0.4s;
+                        -moz-transition: all 0.4s;
+                        transition: all 0.4s;"><i class="fab fa-medium"></i></a></li>
+                     <li><a href="https://twitter.com/anikasystemsinc" style="display: block;
+                        background-color: red;
+                        height: 40px;
+                        width: 40px;
+                        border-radius: 100%;
+                        font-size: 20px;
+                        text-align: center;
+                        line-height: 40px;
+                        color: white;
+                        outline: none;
+                        margin-bottom: 15px;
+                        -webkit-transition: all 0.4s;
+                        -moz-transition: all 0.4s;
+                        transition: all 0.4s;"><i class="fab fa-twitter"></i></a></li>
+                  </ul>
+               </div>
+               <!-- /.column -->
+               <!-- List -->
+               <div class="col-sm-3">
+                  <h5 class="heading-1 mb20" style="color: black;">Menu</h5>
+                  <ul class="list-arrow list-arrow-color no-margin text-small">
+                     <li><a href="index.html"><b>Home</b></a></li>
+                     <li><a href="capabilities.html"><b>Capabilities</b></a></li>
+            
+                     <li><a href="whoweare.html"><b>Who We Are</b></a></li>
+                     <li><a href="careers.html"><b>Careers</b></a></li>
+                     <li><a href="contact.html"><b>Contact</b></a></li>
+                  </ul>
+               </div>
+               <!-- /.column -->
+               <!-- Contact -->
+               <div class="col-sm-3 mt30-xs">
+                  <h5 class="heading-1 mb20" style="color: black;"><b>Contact Us</b></h5>
+                  <h4 class="mb15" style="color: black;"><b>161 Fort Evans Rd NE,<br> Suite 250,Leesburg VA 20176<b></h4>
+                  <h4 class="mb15" style="color: black;"><strong class="text-switch" style="color: black;">Email: info@anikasystems.com </strong></h5>
+                  <h4 class="mb15" style="color: black;"><strong class="text-switch" style="color: black;">Phone: +1 703-244-0158</strong></h5>
+                 
+               </div>
+               <!-- /.column -->
+            </div>
+            <div class="row">
+               <div class="col-sm-12 text-center">
+                  <h4 class="mb15" style="color: black;"><strong class="text-switch" style="color: black;">Anika Systems © 2019</strong></h5>
+                
+               </div>
+               <!-- /.column -->
+            </div>
+            <!-- /.row -->
+         </div>
+         <!-- /.container -->
+      </footer>
+
+	<!-- Javascript Files -->
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>   
+	<script type="text/javascript" src="js/particles.min.js"></script>
+	<script type="text/javascript" src="js/particlesRun.js"></script>
+	<script type="text/javascript" src="js/jquery.mixitup.js"></script>
+	<script type="text/javascript" src="js/form-validator.min.js"></script>  
+	<script type="text/javascript" src="js/jquery.inview.min.js"></script>
+	<script type="text/javascript" src="js/jquery.countTo.js"></script>  
+	<script type="text/javascript">
+		/* ---- Counter (our count) ---- */
+		
+		/* particlesJS.load(@dom-id, @path-json, @callback (optional)); */
+particlesJS.load('particles-js', 'js/particles.json', function() {
+  console.log('callback - particles.js config loaded');
+});
+	</script>
+	<script type="text/javascript" src="js/jquery.magnific-popup.min.js"></script>
+	<script type="text/javascript" src="js/scrollreveal.min.js"></script>
+	<script type="text/javascript" src="js/style-switcher.js"></script><!-- Remove for production -->
+
+	<script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>
+
