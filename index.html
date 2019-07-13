@@ -38,7 +38,7 @@
                this.txt = fullTxt.substring(0, this.txt.length + 1);
                }
          
-               this.el.innerHTML = '<span class="wrap"><b>'+this.txt+'</b></span>';
+               this.el.innerHTML = '<span class="wrap" style="font-family: "Roboto", sans-serif!important;"><b>'+this.txt+'</b></span>';
          
                var that = this;
                var delta = 200 - Math.random() * 100;
@@ -71,7 +71,7 @@
                // INJECT CSS
                var css = document.createElement("style");
                css.type = "text/css";
-               css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #fff}";
+               css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #fff} ";
                document.body.appendChild(css);
            };
       </script>
@@ -477,7 +477,7 @@
                      <h1 >AI + Robot</h1>
                      </div> -->
                   <h1>
-                     <a href="" class="typewrite" style="size: 15px;" data-period="1000" data-type='["Data Analytics", "Intelligent Automation", "Application Development", "Enterprise Modernization", "Cloud Engineering"]'>
+                     <a href="" class="typewrite" style="size: 15px;font-size: 40px;" data-period="1000" data-type='["Data Analytics", "Intelligent Automation", "Application Development", "Enterprise Modernization", "Cloud Engineering"]'>
                      <span class="wrap"></span>
                      </a>
                   </h1>
