@@ -26,35 +26,32 @@ $("#contactForm").validator().on("submit", function(event) {
 });
 function submitForm() {
     // Initiate Variables With Form Content
-    var name = $("#name").val();
-    var email = $("#email").val();
-    var msg_subject = $("#msg_subject").val();
-    var message = $("#message").val();
     $.ajax({
         type: "POST",
-        url: "php/contact.php",
-        data: "name=" + name + "&email=" + email + "&msg_subject=" +
-            msg_subject + "&message=" + message,
+        url: "http://127.0.0.1:8000/contact",
+        data: $("#contactForm").serialize(),
         success: function(text) {
-            if (text == "success") {
-                formSuccess();
+            console.log(text);
+            if (text) {
+                $("#contactForm")[0].reset();
+                $("#msgSubmit").removeClass().addClass("h4 text-success").text("Success");
             } else {
-                formError();
-                submitMSG(false, text);
+                $("#contactForm").removeClass().addClass('shake animated').one(
+        'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend',
+            function() {
+            $(this).removeClass();
+            });
+            $("#msgSubmit").removeClass().addClass("h4 text-danger").text("Failed to submit");
             }
         }
     });
 }
 function formSuccess() {
-    $("#contactForm")[0].reset();
-    submitMSG(true, "Message Submitted!")
+   
+    submitMSG(true, "Message Submitted!");
 }
 function formError() {
-    $("#contactForm").removeClass().addClass('shake animated').one(
-        'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend',
-        function() {
-            $(this).removeClass();
-        });
+    
 }
 function submitMSG(valid, msg) {
     if (valid) {
@@ -62,7 +59,7 @@ function submitMSG(valid, msg) {
     } else {
         var msgClasses = "h4 text-danger";
     }
-    $("#msgSubmit").removeClass().addClass(msgClasses).text(msg);
+    
 }
 
 /* ---- our work gallery ---- */
