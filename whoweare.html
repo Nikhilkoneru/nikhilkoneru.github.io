@@ -12,6 +12,27 @@
       <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
       <!-- Royal Preloader -->
       <link rel="icon" href="images/logosmall.png">
+      <script type="text/javascript">
+         var request = new XMLHttpRequest()
+         request.open('GET', 'http://127.0.0.1:8000/news', true)
+         request.onload = function() {
+               // Begin accessing JSON data here
+               var data = JSON.parse(this.response)
+               data = data.slice((data.length - 3), data.length)
+               if (request.status >= 200 && request.status < 400) {
+               data.forEach(movie => {
+                  $(document).ready(function(){
+                      $(".iterServerData").append("<div class='col-lg-4 col-md-4 wow fadeInUp'><div class='member news'><img src='"+movie.image+"' class='img-fluid' alt=''><div class='member-info'><div class='member-info-content'><a href='"+movie.url+"'><h4 id='firstName'>"+movie.heading+"</h4></a></div></div></div></div>"); });
+
+                 console.log(movie)      
+               })
+               } else {
+                console.log('error')
+           }
+      }
+
+request.send()
+      </script>
       <style type="text/css">
          html{
          font-family: 'Roboto', sans-serif!important;
@@ -454,7 +475,6 @@
             <div class="container">
                <div class="section-header">
                   <h3>Team</h3>
-                  <p>Myteam is the best </p>
                </div>
                <div class="row">
                   <div class="col-lg-4 col-md-4 wow fadeInUp">
@@ -499,6 +519,17 @@
                         </div>
                      </div>
                   </div>
+               </div>
+            </div>
+         </section>
+
+         <section id="team" class="section-bg">
+            <div class="container">
+               <div class="section-header">
+                  <h3>Latest News</h3>
+               </div>
+               <div class="row iterServerData">
+                 
                </div>
             </div>
          </section>
