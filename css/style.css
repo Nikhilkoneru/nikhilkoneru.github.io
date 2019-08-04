@@ -248,7 +248,7 @@ button:hover,
 }
 
 .lead {
-	font-size: 23px;
+	font-size: 2rem;
 }
 
 .lead strong {
@@ -590,7 +590,7 @@ button:hover,
 /* =Lists
 -------------------------------------------------------------- */
 ul.list-arrow { list-style-type:none; }
-ul.list-arrow li { text-indent:-1.3em; }
+/*ul.list-arrow li { text-indent:-1.3em; }*/
 ul.list-arrow li:before {
     font-family: Ionicons;
     content: "\f3d3";
