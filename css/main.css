@@ -2274,7 +2274,7 @@ html.no-csstransitions .home-content__main {
   top: 0;
 }*/
 .process__text {
-  margin-left: 7.5rem;
+  /*margin-left: 7.5rem;*/
   padding-right: 30px;
 }
 
@@ -2306,7 +2306,7 @@ html.no-csstransitions .home-content__main {
     left: 15px;
   }*/
   .process__text {
-    margin-left: 6.8rem;
+   /* margin-left: 6.8rem;*/
     padding-right: 0;
   }
 }
