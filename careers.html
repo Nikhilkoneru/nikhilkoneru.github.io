@@ -15,7 +15,7 @@
 
       <style type="text/css">
           html{
-         font-family: 'Roboto', sans-serif!important;
+         font-family: "Montserrat", sans-serif!important;
        }
          .btn-outline-success {
          margin-top: 15px!important;
@@ -28,7 +28,7 @@
          height: 45px;
          font-size: 14px!important;
          font-weight: 700!important;
-          font-family: 'Roboto', sans-serif!important;
+          font-family: "Montserrat", sans-serif!important;
          text-transform: uppercase!important;
          padding: 10px 15px!important;
          letter-spacing: .8px!important;
@@ -37,7 +37,7 @@
          color: white!important;
          font-size: 15px;
          font-weight: 800;
-          font-family: 'Roboto', sans-serif!important;
+          font-family: "Montserrat", sans-serif!important;
          text-transform: uppercase;
          padding: 10px 15px;
          letter-spacing: .8px;
@@ -79,15 +79,15 @@
          font-size: 14px!important;
          text-transform: uppercase;
          font-weight: 700!important;
-         /*  padding: 10px 15px;*/
-         padding-right: 20px;
-         /*letter-spacing: .10px!important;*/
+          /* padding: 5px 7px;*/
+         padding-right: 20px!important;
+         letter-spacing: .2px!important;
 
          }
          .dropdown-menu > li > a {
          font-size: 13px;
          font-weight: 500;
-          font-family: 'Roboto', sans-serif!important;
+          font-family: "Montserrat", sans-serif!important;
          text-transform: capitalize;
          /*padding: 8px 15px;*/
          letter-spacing: .8px;
@@ -95,7 +95,7 @@
          .dropdown-item{
          font-size: 12px;
          font-weight: 600;
-          font-family: 'Roboto', sans-serif!important;
+          font-family: "Montserrat", sans-serif!important;
          text-transform: uppercase;
          padding: 10px 15px;
          letter-spacing: .8px;
@@ -117,12 +117,12 @@
          margin-top: -1px;
          }
          .indextsize{
-          font-family: 'Roboto', sans-serif!important;
+          font-family: "Montserrat", sans-serif!important;
          font-size: 60px!important;
          font-weight: bold;
          }
          .subtsize{
-          font-family: 'Roboto', sans-serif!important;
+          font-family: "Montserrat", sans-serif!important;
          font-size: 20px!important;
          font-weight: bold!important;
          }
@@ -226,7 +226,7 @@
          color: #555;
          }
          body {
-          font-family: 'Roboto', sans-serif!important;
+          font-family: "Montserrat", sans-serif!important;
        }
       </style>
       <!-- Stylesheets -->
@@ -279,6 +279,12 @@
          top: auto !important;
          }
          }
+         .maintext{
+            font-family: "Montserrat", sans-serif!important;
+         }
+         .backgroundclass{
+            background-color: black;
+         }
       </style>
    </head>
    <body class="" data-spy="scroll" data-target=".navbar" data-offset="70">
@@ -301,8 +307,10 @@
                   <!-- Collect the nav links, forms, and other content for toggling -->
                   <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                      <ul class="nav navbar-nav navbar-right">
-                        <li><a class="hvr-underline-from-center" href="index.html" data-id="home" style="color: white;">Home</a></li>
-                        <li><a class="hvr-underline-from-center" href="capabilities.html" data-id="home" style="color: white;">Capabilities</a></li>
+                        <li><a class="hvr-underline-from-center maintext" href="index.html" data-id="home" style="color: white;">Home</a></li>
+                         <li><a class="hvr-underline-from-center maintext" href="index.html#ideology" data-id="home" style="color: white;">Approach</a></li>
+                         <li><a class="hvr-underline-from-center maintext" href="capabilities.html" data-id="home" style="color: white;">What We Do</a></li>
+                     
                         <!-- <li class="dropdown">
                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><b>Contract Vehicals</b> <span class="glyphicon glyphicon-chevron-down" ></span></a>
                            <ul class="dropdown-menu">
@@ -343,10 +351,10 @@
             <div class="container">
                <div class="row justify-content-lg-center">
                   <div class="text-center ">
-                     <h1 class="title hc-element-invisible" data-animation-effect="fadeIn" data-effect-delay="100"><b>Careers</b></h1>
+                     <h1 class="title hc-element-invisible maintext" data-animation-effect="fadeIn" data-effect-delay="100"><b class="maintext">Careers</b></h1>
                      <div class="separator hc-element-invisible mt-10" data-animation-effect="fadeIn" data-effect-delay="100"></div>
-                     <b class="text-center hc-element-invisible" data-animation-effect="fadeIn" data-effect-delay="100" style="font-weight: 300;
-                        font-size: 20px!important;font-family: 'Roboto', sans-serif!important;">Lets help the government by changing the way they work with technology</b>
+                     <b class="text-center hc-element-invisible maintext" data-animation-effect="fadeIn" data-effect-delay="100" style="font-weight: 300;
+                        font-size: 20px!important">Lets help the government by changing the way they work with technology</b>
                   </div>
                </div>
             </div>
@@ -354,95 +362,111 @@
          <!-- banner end -->
          <!-- main-container start -->
          <!-- ================ -->
-         <section class="main-container">
+         <section class="main-container backgroundclass">
             <div class="container">
                <div class="row">
-                  <div class="full-text-container  border-bottom-clear" style="background-color: white">
-                     <h2> <strong style="color: red"> Why Choose Us</strong></h2>
+                  <div class="full-text-container  border-bottom-clear">
+                     <h2 class="maintext"> <strong style="color: white"> Why Choose Us</strong></h2>
                      <div class="separator-2 hidden-lg-down"></div>
                      <b style="font-weight: 300;
-                        font-size: 20px!important;font-family: 'Roboto', sans-serif!important;">At Anika Systems, we passionately believe in honesty, autonomy, collaboration, trust, and transparency. We select, empower and trust employees who are wired to deliver customer success - an empowerment that drives customer loyalty, professional growth and organizational strength. We look for employees who can see the big picture, are customer focused, honest and totally committed. “Micromanagers” who love over the shoulders management approach have no place in our company. We warmly welcome out of the box thinkers and non-traditional workforce applicants.</b>
+                        font-size: 20px!important;font-family: 'Montserrat', sans-serif!important;color: white">At Anika Systems, we passionately believe in honesty, autonomy, collaboration, trust, and transparency. We select, empower and trust employees who are wired to deliver customer success - an empowerment that drives customer loyalty, professional growth and organizational strength. We look for employees who can see the big picture, are customer focused, honest and totally committed. “Micromanagers” who love over the shoulders management approach have no place in our company. We warmly welcome out of the box thinkers and non-traditional workforce applicants.</b>
                      </br></br>
+                      <div class="hc-item-box-2 hc-element-invisible" data-animation-effect="fadeInDownSmall" data-effect-delay="100">
+                        <span class="icon without-bg"><i style="color: red" class="fas fa-file-signature"></i></span>
+                        <div class="body">
+                           <h4 style="color: white"><b>Our Differentiators</b></h4>
+                           <br>
+                           <ul class="list-icons">
+                              <li><i style="color: white" class="far fa-check-square"></i><b style="font-weight: 300;
+                                 font-size: 20px!important;color: white">Work Life Balance </b></li>
+                              <li><i style="color: white" class="far fa-check-square"></i><b style="font-weight: 300;
+                                 font-size: 20px!important;color: white">Flexible working hours</b></li>
+                              <li><i style="color: white" class="far fa-check-square"></i><b style="font-weight: 300;
+                                 font-size: 20px!important;color: white">Remote Work Options</b></li>
+                              <li><i style="color: white" class="far fa-check-square"></i><b style="font-weight: 300;
+                                 font-size: 20px!important;color: white">Closer relationships with leaders</b></li>
+                              <li><i style="color: white" class="far fa-check-square"></i><b style="font-weight: 300;
+                                 font-size: 20px!important;color: white">Being able to influence the direction          and success of the business</b></li>
+                              <li><i style="color: white" class="far fa-check-square"></i><b style="font-weight: 300;
+                                 font-size: 20px!important;color: white">Open communication</b></li>
+                              <li><i style="color: white" class="far fa-check-square"></i><b style="font-weight: 300;
+                                 font-size: 20px!important;color: white">A tight-knit team</b></li>
+                           </ul>
+                        </div>
+                     </div>
                      <div class="hc-item-box-2 hc-element-invisible" data-animation-effect="fadeInDownSmall" data-effect-delay="200">
                         <span class="icon without-bg"><i style="color: red" class="fas fa-dollar-sign"></i></span>
                         <div class="body">
-                           <h4 style="color: red"><b>Compensation</b></h4>
+                           <h4 style="color: white"><b class="maintext">Compensation</b></h4>
                            <br>
                            <b style="font-weight: 300;
-                              font-size: 20px!important;">We offer a very competitive salary and an option to be a part of company’s success.</b>
+                              font-size: 20px!important;color: white" class="maintext">We offer a very competitive salary and an option to be a part of company’s success.</b>
                            </br>
                         </div>
                      </div>
                      <div class="hc-item-box-2 hc-element-invisible" data-animation-effect="fadeInDownSmall" data-effect-delay="200">
                         <span class="icon without-bg"><i style="color: red" class="fas fa-chart-line"></i></span>
                         <div class="body">
-                           <h4 style="color: red"><b>Growth</b></h4>
+                           <h4 style="color: white"><b>Growth</b></h4>
                            <br>
                            <b style="font-weight: 300;
-                              font-size: 20px!important;">We are lifelong learners and we offer below continuous learning programs </b>
+                              font-size: 20px!important;color: white">We are lifelong learners and we offer below continuous learning programs   </b>
                            </br>
                            <ul class="list-icons">
-                              <li><i class="far fa-check-square"></i><b style="font-weight: 300;
-                                 font-size: 20px!important;">Professional Development Program ($3000/year)</b></li>
-                              <li><i class="far fa-check-square"></i><b style="font-weight: 300;
-                                 font-size: 20px!important;">Professional Certification Program ($3000/year)</b></li>
-                              <li><i class="far fa-check-square"></i><b style="font-weight: 300;
-                                 font-size: 20px!important;">Inhouse Training</b></li>
-                              <li><i class="far fa-check-square"></i><b style="font-weight: 300;
-                                 font-size: 20px!important;">Pluralsight/Linux Academy/Cloud Academy Training</b></li>
-                              <li><i class="far fa-check-square"></i><b style="font-weight: 300;
-                                 font-size: 20px!important;">Being able to influence the direction          and success of the business</b></li>
-                              <li><i class="far fa-check-square"></i><b style="font-weight: 300;
-                                 font-size: 20px!important;">Open communication</b></li>
-                              <li><i class="far fa-check-square"></i><b style="font-weight: 300;
-                                 font-size: 20px!important;">A tight-knit team</b></li>
+                              <li><i style="color: white" class="far fa-check-square"></i><b style="font-weight: 300;
+                                 font-size: 20px!important;color: white">Professional Development Program ($3000/year)</b></li>
+                              <li><i style="color: white" class="far fa-check-square"></i><b style="font-weight: 300;
+                                 font-size: 20px!important;color: white">Professional Certification Program ($3000/year)</b></li>
+                              <li><i style="color: white" class="far fa-check-square"></i><b style="font-weight: 300;
+                                 font-size: 20px!important;color: white">Inhouse Training</b></li>
+                              <li><i style="color: white" class="far fa-check-square"></i><b style="font-weight: 300;
+                                 font-size: 20px!important;color: white">Pluralsight/Linux Academy/Cloud Academy Training</b></li>
+                              <li><i style="color: white" class="far fa-check-square"></i><b style="font-weight: 300;
+                                 font-size: 20px!important;color: white">Being able to influence the direction          and success of the business</b></li>
+                              <li><i style="color: white" class="far fa-check-square"></i><b style="font-weight: 300;
+                                 font-size: 20px!important;color: white">Open communication</b></li>
+                              <li><i style="color: white" class="far fa-check-square"></i><b style="font-weight: 300;
+                                 font-size: 20px!important;color: white">A tight-knit team</b></li>
                            </ul>
                         </div>
                      </div>
-                     <div class="hc-item-box-2 hc-element-invisible" data-animation-effect="fadeInDownSmall" data-effect-delay="100">
-                        <span class="icon without-bg"><i style="color: red" class="fas fa-file-signature"></i></span>
-                        <div class="body">
-                           <h4 style="color: red"><b>Our Differentiators</b></h4>
-                           <br>
-                           <ul class="list-icons">
-                              <li><i class="far fa-check-square"></i><b style="font-weight: 300;
-                                 font-size: 20px!important;">Work Life Balance </b></li>
-                              <li><i class="far fa-check-square"></i><b style="font-weight: 300;
-                                 font-size: 20px!important;">Flexible working hours</b></li>
-                              <li><i class="far fa-check-square"></i><b style="font-weight: 300;
-                                 font-size: 20px!important;">Remote Work Options</b></li>
-                              <li><i class="far fa-check-square"></i><b style="font-weight: 300;
-                                 font-size: 20px!important;">Closer relationships with leaders</b></li>
-                              <li><i class="far fa-check-square"></i><b style="font-weight: 300;
-                                 font-size: 20px!important;">Being able to influence the direction          and success of the business</b></li>
-                              <li><i class="far fa-check-square"></i><b style="font-weight: 300;
-                                 font-size: 20px!important;">Open communication</b></li>
-                              <li><i class="far fa-check-square"></i><b style="font-weight: 300;
-                                 font-size: 20px!important;">A tight-knit team</b></li>
-                           </ul>
-                        </div>
-                     </div>
+                    
                      <div class="hc-item-box-2 hc-element-invisible" data-animation-effect="fadeInDownSmall" data-effect-delay="100">
                         <span class="icon without-bg"><i style="color: red" class="fas fa-file-medical"></i></span>
                         <div class="body">
-                           <h4 style="color: red"><b>Health Benefits</b></h4>
+                           <h4 style="color: white"><b>Health Benefits</b></h4>
                            <br>
                            <ul class="list-icons">
-                              <li><i class="far fa-check-square"></i><b style="font-weight: 300;
-                                 font-size: 20px!important;">Group Health / Dental / Vision</b></li>
-                              <li><i class="far fa-check-square"></i><b style="font-weight: 300;
-                                 font-size: 20px!important;">401K Retirement Plan</b></li>
-                              <li><i class="far fa-check-square"></i><b style="font-weight: 300;
-                                 font-size: 20px!important;">Paid Time Off & Holidays</b></li>
-                              <li><i class="far fa-check-square"></i><b style="font-weight: 300;
-                                 font-size: 20px!important;">Bonus Programs</b></li>
-                              <li><i class="far fa-check-square"></i><b style="font-weight: 300;
-                                 font-size: 20px!important;">Referral Program ($5,000)</b></li>
+                              <li><i style="color: white" class="far fa-check-square"></i><b style="font-weight: 300;
+                                 font-size: 20px!important;color: white">Group Health / Dental / Vision</b></li>
+                              <li><i style="color: white" class="far fa-check-square"></i><b style="font-weight: 300;
+                                 font-size: 20px!important;color: white">Short Term Disability</b></li>
+                              <li><i style="color: white" class="far fa-check-square"></i><b style="font-weight: 300;
+                                 font-size: 20px!important;color: white">Long Term Disability</b></li>
+                              <li><i style="color: white" class="far fa-check-square"></i><b style="font-weight: 300;
+                                 font-size: 20px!important;color: white">Paid Time Off & Holidays</b></li>
+                              <li><i style="color: white" class="far fa-check-square"></i><b style="font-weight: 300;
+                                 font-size: 20px!important;color: white">Paid Maternity and Paternity leave</b></li>
+                           </ul>
+                        </div>
+                     </div>
+                     <div class="hc-item-box-2 hc-element-invisible" data-animation-effect="fadeInDownSmall" data-effect-delay="100">
+                        <span class="icon without-bg"><i style="color: red" class="fas fa-coins"></i></span>
+                        <div class="body">
+                           <h4 style="color: white"><b>Financial Benefits</b></h4>
+                           <br>
+                           <ul class="list-icons">
+                              <li><i style="color: white" class="far fa-check-square"></i><b style="font-weight: 300;
+                                 font-size: 20px!important;color: white">401K Retirement Plan</b></li>
+                              <li><i style="color: white" class="far fa-check-square"></i><b style="font-weight: 300;
+                                 font-size: 20px!important;color: white">Bonus Programs</b></li>
+                              <li><i style="color: white" class="far fa-check-square"></i><b style="font-weight: 300;
+                                 font-size: 20px!important;color: white">Referral Program ($5,000)</b></li>
                            </ul>
                         </div>
                      </div>
                      <div class="separator-3 hidden-lg-down"></div>
-                     <a href="#" class="btn btn-default btn-animated" style="background-color: red;border-color: red;">Contact Us <i class="fas fa-phone"></i></a>
+                     <a href="contact.html" class="btn btn-default btn-animated" style="background-color: red;border-color: red;">Contact Us <i class="fas fa-phone"></i></a>
                   </div>
                </div>
             </div>
@@ -479,16 +503,16 @@
          <div class="container">
             <div class="row mb30">
                <!-- Logo -->
-               <div class="col-sm-3">
+               <div class="col-sm-4">
                   <!-- <span class="icon-handle-streamline-vector logo"></span> -->
                
-                  <p class="no-margin text-switch" style="color: black;font-family: 'Roboto', sans-serif!important;">
+                  <p class="no-margin text-switch" style="color: black;font-family: 'Montserrat', sans-serif!important;font-size: 18px;">
                      At Anika Systems, we are more than a technology consulting firm. We view our clients as partners and actively collaborate with them to achieve long-term success and make a significant contribution to their mission goals.
                   </p>
                </div>
                <!-- /.column -->
                <!-- Social -->
-               <div class="col-sm-3 mt30-xs">
+               <div class="col-sm-4 mt30-xs">
                   <h5 class="heading-1 mb20" style="color: black;">Social</h5>
                   <ul class="list-inline">
                      <li><a href="https://www.linkedin.com/company/anika-systems/about/" style="display: block;
@@ -537,31 +561,20 @@
                </div>
                <!-- /.column -->
                <!-- List -->
-               <div class="col-sm-3">
-                  <h5 class="heading-1 mb20" style="color: black;font-family: 'Roboto', sans-serif!important;">Menu</h5>
-                  <ul class="list-arrow list-arrow-color no-margin text-small">
-                     <li><a href="index.html"><b>Home</b></a></li>
-                     <li><a href="capabilities.html"><b>Capabilities</b></a></li>
-                     
-                     <li><a href="whoweare.html"><b>Who We Are</b></a></li>
-                     <li><a href="careers.html"><b>Careers</b></a></li>
-                     <li><a href="contact.html"><b>Contact</b></a></li>
-                  </ul>
-               </div>
                <!-- /.column -->
                <!-- Contact -->
-               <div class="col-sm-3 mt30-xs">
-                  <h5 class="heading-1 mb20" style="color: black; font-family: 'Roboto', sans-serif!important;"><b>Contact Us</b></h5>
-                  <h4 class="mb15" style="color: black;font-family: 'Roboto', sans-serif!important;"><b>161 Fort Evans Rd NE,<br> Suite 250,Leesburg VA 20176<b></h4>
-                  <h5 class="mb15" style="color: black;text-transform: none;font-family: 'Roboto', sans-serif!important;"><strong class="text-switch" style="color: black;">Email: info@anikasystems.com </strong></h5>
-                  <h5 class="mb15" style="color: black;text-transform: none;font-family: 'Roboto', sans-serif!important;"><strong class="text-switch" style="color: black;">Phone: +1 703-244-0158</strong></h5>
+               <div class="col-sm-4 mt30-xs">
+                  <h5 class="heading-1 mb20" style="color: black; font-family: 'Montserrat', sans-serif!important;"><b>Contact Us</b></h5>
+                  <h4 class="mb15" style="color: black;font-family: 'Montserrat', sans-serif!important;"><b>161 Fort Evans Rd NE,<br> Suite 250,Leesburg VA 20176<b></h4>
+                  <h5 class="mb15" style="color: black;text-transform: none;font-family: 'Montserrat', sans-serif!important;"><strong class="text-switch" style="color: black;">Email: info@anikasystems.com </strong></h5>
+                  <h5 class="mb15" style="color: black;text-transform: none;font-family: 'Montserrat', sans-serif!important;"><strong class="text-switch" style="color: black;">Phone: +1 703-244-0158</strong></h5>
                  
                </div>
                <!-- /.column -->
             </div>
             <div class="row">
                <div class="col-sm-12 text-center">
-                  <h4 class="mb15" style="color: black;font-family: 'Roboto', sans-serif!important;"><strong class="text-switch" style="color: black;">Anika Systems © 2019</strong></h5>
+                  <h4 class="mb15" style="color: black;font-family: 'Montserrat', sans-serif!important;"><strong class="text-switch" style="color: black;">Anika Systems © 2019</strong></h5>
                 
                </div>
                <!-- /.column -->
