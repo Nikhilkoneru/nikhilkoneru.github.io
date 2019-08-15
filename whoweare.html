@@ -202,6 +202,9 @@ request.send()
          left: 0;
          right: 0;
          }
+         ul.nav li.dropdown:hover ul.dropdown-menu {
+    display: block;
+}
          /* Shutter Out Horizontal */
          .hvr-shutter-out-horizontal {
          display: inline-block;
@@ -313,6 +316,39 @@ request.send()
       .fa.fa-navicon {
   color:white;
 }
+    .dropdown-menu > li > a {
+    display: block;
+    padding: 3px 10px;
+    clear: both;
+    font-weight: 550;
+    line-height: 1.42857;
+    color: #FFF!important;
+    white-space: nowrap;
+    font-size: 14px;
+}
+.navbar-nav>li>.dropdown-menu {
+    margin-top: 0px;
+    position: absolute;
+    z-index: 0px;
+    padding-top: 10px;
+}
+.dropdown-menu {
+    background-color: #3C3C3C;
+    border: 0px;
+    border-radius: 0px;
+    min-width: 150px;
+    box-shadow: none;
+    padding: 12px 0;
+}
+ul.nav li.dropdown:hover ul.dropdown-menu {
+    display: block;
+}
+.dropdown-menu {
+   background-color: #3C3C3C;
+}
+.navbar{
+  padding-bottom: 0rem!important;
+}
    </style>
    <body class="" data-spy="scroll" data-target=".navbar" data-offset="70">
       <!-- Begin Header -->
@@ -332,7 +368,16 @@ request.send()
                <ul class="nav navbar-nav ml-auto">
                   <li><a class="hvr-underline-from-center" href="index.html" data-id="home" style="color: black;">Home</a></li>
                   <li><a class="hvr-underline-from-center" href="index.html#ideology" data-id="home" style="color: black;">Approach</a></li>
-                  <li><a class="hvr-underline-from-center" href="capabilities.html" data-id="home" style="color: black;">What We Do</a></li>
+                  <li class="dropdown">
+                       <a href="capabilities.html"  role="button" aria-haspopup="true" aria-expanded="false">What We Do <span class="glyphicon glyphicon-chevron-down" ></span></a>
+                           <ul class="dropdown-menu">
+                            <li><a href="capabilities.html#capabilitiesspan"><b>DATA AND ANALYTICS</b></a></li>
+                            <li><a href="capabilities.html#iaspan"><b>INTELLIGENT AUTOMATION </a></b></li>
+                            <li><a href="capabilities.html#apdspan"><b>APPLICATION DEVELOPMENT</a></b></li>
+                            <li><a href="capabilities.html#emspan"><b>ENTERPRISE MODERNIZATION</a></b></li>
+                            <li><a href="capabilities.html#csspan"><b>CLOUD ENGINEERING</b></a></li>
+                           </ul>
+                        </li>
                   <li><a class="hvr-underline-from-center" href="whoweare.html" data-id="home" style="color: black;">Who We Are</a></li>
                   <li><a class="hvr-underline-from-center" href="careers.html" data-id="home" style="color: black;">Careers</a></li>
                   <li>
