@@ -108,7 +108,7 @@ request.send()
          font-family: "Montserrat", sans-serif!important;
          text-transform: uppercase;
          padding: 9px 23px!important;
-         letter-spacing: .3px!important;
+         letter-spacing: .2px!important;
          }
          .dropdown-menu > li > a {
          font-size: 13px;
@@ -277,6 +277,17 @@ request.send()
                 margin-bottom: 10px;
                 border-radius: 0;
          }
+         .navbar {
+  
+    padding: .5rem 0rem!important;
+}
+.container-fluid {
+    width: 100%;
+    padding-right: 1px!important;
+    padding-left: 1px!important;
+    margin-right: auto;
+    margin-left: auto;
+}
       </style>
       <!-- Stylesheets -->
       <link href="rapid/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -349,12 +360,14 @@ ul.nav li.dropdown:hover ul.dropdown-menu {
 .navbar{
   padding-bottom: 0rem!important;
 }
+
    </style>
    <body class="" data-spy="scroll" data-target=".navbar" data-offset="70">
       <!-- Begin Header -->
       <header>
-         <nav class="navbar navbar-default navbar-expand-lg navbar-light navbar-fixed-top">
-            <a class="navbar-brand scroll-link" href="#home" data-id="home"><img style="position: absolute; top: 2px;" src="images/Logo.png" width="200px"></a>
+         <nav class="navbar navbar-default navbar-expand-lg  navbar-fixed-top">
+          <div class="container-fluid">
+             <a class="navbar-brand scroll-link" href="#home" data-id="home"><img style="position: absolute; top: 8px;" src="images/Logo.png" width="200px"></a>
            <!--  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
             <span style="color: white"class="navbar-toggler-icon"></span>
             </button> -->
@@ -365,11 +378,11 @@ ul.nav li.dropdown:hover ul.dropdown-menu {
 </span>
                      </button>
             <div class="collapse navbar-collapse" id="navbarNavDropdown">
-               <ul class="nav navbar-nav ml-auto">
+               <ul class="nav navbar-nav ml-auto navbar-right">
                   <li><a class="hvr-underline-from-center" href="index.html" data-id="home" style="color: black;">Home</a></li>
                   <li><a class="hvr-underline-from-center" href="index.html#ideology" data-id="home" style="color: black;">Approach</a></li>
-                  <li class="dropdown">
-                       <a href="capabilities.html"  role="button" aria-haspopup="true" aria-expanded="false">What We Do <span class="glyphicon glyphicon-chevron-down" ></span></a>
+                  <li class="dropdown ">
+                       <a class="nav-link dropdown-toggle" href="capabilities.html "  role="button" aria-haspopup="true" aria-expanded="false">What We Do</a>
                            <ul class="dropdown-menu">
                             <li><a href="capabilities.html#capabilitiesspan"><b>DATA AND ANALYTICS</b></a></li>
                             <li><a href="capabilities.html#iaspan"><b>INTELLIGENT AUTOMATION </a></b></li>
@@ -385,6 +398,7 @@ ul.nav li.dropdown:hover ul.dropdown-menu {
                   </li>
                </ul>
             </div>
+          </div>
          </nav>
          <!-- End Navigation -->
       </header>
