@@ -26,6 +26,7 @@
       <script type="text/javascript" src="js/parallax.min.js"></script>
       <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:700i" rel="stylesheet">
       <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+
       <!-- Royal Preloader -->
       <style type="text/css">
           html{
@@ -105,7 +106,7 @@ ul.nav li.dropdown:hover ul.dropdown-menu {
          box-shadow: 0px 10px 10px #777;
          }
           .navbar-default .navbar-nav > li > a {
-         font-size: 12px!important;
+         font-size: 14px!important;
          text-transform: uppercase;
          font-weight: 700!important;
          /*  padding: 10px 15px;*/
@@ -320,7 +321,7 @@ ul.nav li.dropdown:hover ul.dropdown-menu {
 .dropdown-menu {
    background-color: #3C3C3C;
 }
-    </style>
+      </style>
       <!-- Stylesheets -->
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
       <!-- <link href="css/bootstrap.min.css" rel="stylesheet"> -->
@@ -359,12 +360,11 @@ ul.nav li.dropdown:hover ul.dropdown-menu {
                         <li class="dropdown">
                            <a href="capabilities.html"  role="button" aria-haspopup="true" aria-expanded="false">What We Do <span class="glyphicon glyphicon-chevron-down" ></span></a>
                            <ul class="dropdown-menu">
-                            <li data-toggle="collapse" data-target=".navbar-collapse">
-                            <a href="capabilities.html#capabilitiesspan"><b>DATA AND ANALYTICS</b></a></li>
-                            <li data-toggle="collapse" data-target=".navbar-collapse"><a href="capabilities.html#iaspan"><b>INTELLIGENT AUTOMATION </a></b></li>
-                            <li data-toggle="collapse" data-target=".navbar-collapse"><a href="capabilities.html#apdspan"><b>APPLICATION DEVELOPMENT</a></b></li>
-                            <li data-toggle="collapse" data-target=".navbar-collapse"><a href="capabilities.html#emspan"><b>ENTERPRISE MODERNIZATION</a></b></li>
-                            <li data-toggle="collapse" data-target=".navbar-collapse"><a href="capabilities.html#csspan"><b>CLOUD ENGINEERING</b></a></li>
+                            <li><a href="capabilities.html#capabilitiesspan"><b>DATA AND ANALYTICS</b></a></li>
+                            <li><a href="capabilities.html#iaspan"><b>INTELLIGENT AUTOMATION </a></b></li>
+                            <li><a href="capabilities.html#apdspan"><b>APPLICATION DEVELOPMENT</a></b></li>
+                            <li><a href="capabilities.html#emspan"><b>ENTERPRISE MODERNIZATION</a></b></li>
+                            <li><a href="capabilities.html#csspan"><b>CLOUD ENGINEERING</b></a></li>
                            </ul>
                         </li>
                         <li><a class="hvr-underline-from-center" href="whoweare.html" data-id="home" style="color: white;">Who We Are</a></li>
@@ -1088,6 +1088,13 @@ ul.nav li.dropdown:hover ul.dropdown-menu {
          </div>
          <!-- /.container -->
       </footer>
+      <script type="text/javascript">
+          $('.nav a').on('click', function(){
+            $(".btn-navbar").click(); //bootstrap 2.x
+            $(".navbar-toggle").click(); //bootstrap 3.x by Richard
+            this.forceUpdate({});
+        });
+      </script>
       <script src="js/jquery-3.2.1.min.js"></script>
       <script src="js/plugins.js"></script>
       <script src="js/main2.js"></script>
