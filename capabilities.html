@@ -26,7 +26,6 @@
       <script type="text/javascript" src="js/parallax.min.js"></script>
       <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:700i" rel="stylesheet">
       <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
-      
 
       <!-- Royal Preloader -->
       <style type="text/css">
@@ -36,9 +35,6 @@
           body {
           font-family: 'Montserrat', sans-serif!important;
        }
-ul.nav li.dropdown:hover ul.dropdown-menu {
-    display: block;
-}
          .circular--landscape {
          display: inline-block;
          position: relative;
@@ -316,12 +312,27 @@ ul.nav li.dropdown:hover ul.dropdown-menu {
     box-shadow: none;
     padding: 12px 0;
 }
-ul.nav li.dropdown:hover ul.dropdown-menu {
-    display: block;
-}
 .dropdown-menu {
    background-color: #3C3C3C;
 }
+.responsive{
+    height: 80px;
+    width: 80px;
+}
+.
+@media screen and (max-width: 600px) {
+.responsive{
+    height: 30px;
+    width: 30px;
+}
+}
+@media screen and (max-width: 992px) {
+.responsive{
+    height: 40px;
+    width: 40px;
+}
+}
+
       </style>
       <!-- Stylesheets -->
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -359,13 +370,23 @@ ul.nav li.dropdown:hover ul.dropdown-menu {
                         <li><a  class="hvr-underline-from-center" href="index.html" data-id="home" style="color: white;">Home</a></li>
                         <li><a  class="hvr-underline-from-center" href="index.html#ideology" data-id="home" style="color: white;"><b>Approach</b></a></li>
                         <li class="dropdown">
-                           <a href="#"  role="button" aria-haspopup="true" aria-expanded="false">What We Do <span class="glyphicon glyphicon-chevron-down" ></span></a>
+                           <a role="button" aria-haspopup="true" aria-expanded="false">What We Do <span class="glyphicon glyphicon-chevron-down" ></span></a>
                            <ul class="dropdown-menu">
-                            <li><a data-toggle="collapse" data-target=".navbar-collapse"  href="capabilities.html#capabilitiesspan"><b>DATA AND ANALYTICS</b></a></li>
-                            <li><a data-toggle="collapse" data-target=".navbar-collapse"  href="capabilities.html#iaspan"><b>INTELLIGENT AUTOMATION </a></b></li>
-                            <li><a data-toggle="collapse" data-target=".navbar-collapse"  href="capabilities.html#apdspan"><b>APPLICATION DEVELOPMENT</a></b></li>
-                            <li><a data-toggle="collapse" data-target=".navbar-collapse"  href="capabilities.html#emspan"><b>ENTERPRISE MODERNIZATION</a></b></li>
-                            <li><a data-toggle="collapse" data-target=".navbar-collapse" href="capabilities.html#csspan"><b>CLOUD ENGINEERING</b></a></li>
+                            <li class="navbar-header">CAPABILITIES</h4>
+                            <li><a href="capabilities.html#capabilitiesspan"><b>DATA AND ANALYTICS</b></a></li>
+                            <li><a href="capabilities.html#iaspan"><b>INTELLIGENT AUTOMATION </a></b></li>
+                            <li><a href="capabilities.html#apdspan"><b>APPLICATION DEVELOPMENT</a></b></li>
+                            <li><a href="capabilities.html#emspan"><b>ENTERPRISE MODERNIZATION</a></b></li>
+                            <li><a href="capabilities.html#csspan"><b>CLOUD ENGINEERING</b></a></li>
+                             <li role="separator" class="divider"></li>
+                              <li class="navbar-header">TECHNOLOGIES</h4>
+                                <li><a href="capabilities.html#capabilitiesspan"><b>MICROSOFT AZURE</b></a></li>
+                                <li><a href="capabilities.html#capabilitiesspan"><b>CLOUD BEES</b></a></li>
+                                <li><a href="capabilities.html#capabilitiesspan"><b>UI PATH</b></a></li>
+                                <li><a href="capabilities.html#capabilitiesspan"><b>REDHAT</b></a></li>
+                                <li><a href="capabilities.html#capabilitiesspan"><b>PIVOTAL GREENPLUM</b></a></li>
+                                <li><a href="capabilities.html#capabilitiesspan"><b>TABLEAU</b></a></li>
+
                            </ul>
                         </li>
                         <li><a class="hvr-underline-from-center" href="whoweare.html" data-id="home" style="color: white;">Who We Are</a></li>
@@ -417,7 +438,8 @@ ul.nav li.dropdown:hover ul.dropdown-menu {
             <div class="row section-header" data-aos="fade-up">
                <div class="col-full">
                   <h3 class="subhead">Capabilities</h3>
-                  <h1 class="display-1 text-color">Data and Analytics</h1>
+
+                  <h1 class="display-1 text-color"><span class=" services-icon"><img class="responsive" src="iconset/dataandanalytics.png"></span> Data and Analytics</h1>
                </div>
             </div>
             <!-- end section-header -->
@@ -426,7 +448,7 @@ ul.nav li.dropdown:hover ul.dropdown-menu {
             <div class="row" data-aos="fade-up">
                <div class="col-full">
                   <p class="lead text-color" style="color: white">
-                     Data is a strategic asset for all federal agencies which can help them in making informed decisions that can save lives, spend taxpayer dollars efficiently, detect and neutralize fraud. Our Data Analytics solutions include Enterprise Data Strategy, Data Governance, Data Engineering, Visual Analytics, Data Science and Chief Data & Analytics Officer Advisory Services.
+                     Data is a strategic asset for all federal agencies which can help them in making informed decisions that can save lives, spend taxpayer dollars efficiently, detect and neutralize fraud. Our Data Analytics solutions include Data Strategy, Data Governance, Data Engineering, Visual Analytics, Data Science and Chief Data & Analytics Officer Advisory Services.
                   </p>
                </div>
             </div>
@@ -439,7 +461,7 @@ ul.nav li.dropdown:hover ul.dropdown-menu {
                   <div class="process__vline-right"></div>
                   <div class="col-block process__col"  data-aos="fade-up">
                      <div class="process__text">
-                        <h4 class="text-color" style="color: white"><b>Data Strategy</b></h4>
+                        <h4 class="text-color" style="color: white"><span class=" services-icon"><img class="responsive" src="iconset/datastrategy.png"></span><b>Data Strategy</b></h4>
                         </br>
                         <p class="lead text-color" style="color: white">
                            We analyze, develop vision and create a data strategy, through roadmaps, stakeholder management, and implementation planning and execution to deliver your business and mission objectives.
@@ -448,16 +470,17 @@ ul.nav li.dropdown:hover ul.dropdown-menu {
                   </div>
                   <div class="col-block process__col"  data-aos="fade-up">
                      <div class="process__text">
-                        <h4 style="color: white"><b>Data Governance</b></h4>
+                        <h4 style="color: white"><span class=" services-icon"><img class="responsive" src="iconset/datagovernance.png"></span><b>Data Governance</b></h4>
                         </br>
                         <p class="lead" style="color: white">
                            Our Data governance solutions enable our federal customers to define clear ownership, be compliant with business rules, meet operational capabilities, seamless stakeholder interactions and facilitate easy decision-making processes.
+
                         </p>
                      </div>
                   </div>
                   <div class="col-block process__col"  data-aos="fade-up">
                      <div class="process__text">
-                        <h4 style="color: white"><b>Data Science</b></h4>
+                        <h4 style="color: white"><span class=" services-icon"><img class="responsive" src="iconset/datascience.png"></span><b>Data Science</b></h4>
                         </br>
                         <p class="lead" style="color: white">
                            We extract knowledge and explore insights from your structured and unstructured data and provide meaningful predictive patterns and insights derived from your data.  Our experience includes applying statistical and predictive models and machine learning algorithms to generate business insight, such as:
@@ -472,12 +495,12 @@ ul.nav li.dropdown:hover ul.dropdown-menu {
                   </div>
                   <div class="col-block process__col"  data-aos="fade-up">
                      <div class="process__text">
-                        <h4 style="color: white"><b>Visual Analytics</b></h4>
+                        <h4 style="color: white"><span class=" services-icon"><img class="responsive" src="iconset/visualanalytics.png"></span><b>Visual Analytics</b></h4>
                         </br>
                         <p class="lead" style="color: white">
                            We help building both Enterprise Analytics as well as Self-service data discovery platforms (Tableau, PowerBI) for Enterprise users as well as business users. Our experience includes
                         <ul class="no-margin" style="padding-left: 30px">
-                           <li style="color: red"><p class="lead" style="color: white">Architect, Building and Maintaining Business Intelligence and Visualization Centers of Excellence (CoEs)</p></li>
+                           <li style="color: red"><p class="lead" style="color: white">Architect, Build and Maintain Business Intelligence and Visualization Centers of Excellence (CoEs)</p></li>
                            <li style="color: red"><p class="lead" style="color: white">Building dashboards and reports</p></li>
                            <li style="color: red"><p class="lead" style="color: white">Tools Bake off</p></li>
                            <li style="color: red"><p class="lead" style="color: white">Section 508 Testing</p></li>
@@ -489,7 +512,7 @@ ul.nav li.dropdown:hover ul.dropdown-menu {
                   </div>
                   <div class="col-block process__col"  data-aos="fade-up">
                       <div class="process__text">
-                        <h4 style="color: white"><b>Data Engineering</b></h4>
+                        <h4 style="color: white"><span class=" services-icon"><img class="responsive" src="iconset/dataengineering.png"></span><b>Data Engineering</b></h4>
                         </br>
                         <p class="lead" style="color: white">
                            We design and build distributed, scalable and reliable data infrastructure which includes
@@ -505,10 +528,10 @@ ul.nav li.dropdown:hover ul.dropdown-menu {
                   </div>
                   <div class="col-block process__col"  data-aos="fade-up">
                      <div class="process__text">
-                        <h4 style="color: white"><b>Chief Data & Analytics Officer Advisory Services</b></h4>
+                        <h4 style="color: white"><span class=" services-icon"><img class="responsive" src="iconset/dataadvisoryservices.png"></span><b>Data Advisory Services</b></h4>
                         </br>
                         <p class="lead" style="color: white;">
-                           Our advisory services assist the Chief Data & Analytics Officer in building partnerships with both internal and external customers for greater and more focused insights. We help in Defining, fostering and embedding a culture of data analytics and insight-based decision making whilst effectively safeguarding citizen data and breaking down silos. Our solutions include:
+                           Our advisory services assist the Chief Data & Analytics Officer in building partnerships with both internal and external customers for greater and more focused insights. We help in Defining, fostering and embedding a culture of data and analytics, insight-based decision making whilst effectively safeguarding citizen data and breaking down silos. Our solutions:
                         <ul class="no-margin" style="padding-left: 30px">
                            <li style="color: red"><p class="lead" style="color: white">Drive AI/ML adoption<p></li>
                            <li style="color: red"><p class="lead" style="color: white">Embrace cloud native data solutions<p></li>
@@ -529,7 +552,7 @@ ul.nav li.dropdown:hover ul.dropdown-menu {
             <div class="container">
                <div class="row section-header" data-aos="fade-up">
                   <div class="col-full">
-                     <h1 class="display-1"style="color: white">Intelligent Automation</h1>
+                     <h1 class="display-1"style="color: white"><span class=" services-icon"><img class="responsive" src="iconset/intelligentautomation.png"></span>Intelligent Automation</h1>
                   </div>
                </div>
                <!-- end section-header -->
@@ -538,7 +561,7 @@ ul.nav li.dropdown:hover ul.dropdown-menu {
                <div class="row" data-aos="fade-up">
                   <div class="col-full">
                      <p class="lead" style="color: white">
-                        WWe empower the human creativity with our scalable Intelligent Automation (IA) solutions that assist federal agencies achieve higher levels of productivity, efficiency and compliance and cost reduction. We achieve this by partnering by creating solutions in the fields of Robotic Process Automation (RPA), Machine learning (ML) and Artificial Intelligence (AI). Our IA solutions enable process orchestration to make smarter decisions and achieve end-to-end AI-Driven Process Automation.Our Intelligent Automation Practice Areas include
+                        We empower the human creativity with our scalable Intelligent Automation (IA) solutions that assist federal agencies achieve higher levels of productivity, efficiency and compliance and cost reduction. We achieve this by creating solutions in the fields of Robotic Process Automation (RPA), Machine learning (ML) and Artificial Intelligence (AI). Our IA solutions enable process orchestration to make smarter decisions and achieve end-to-end AI-Driven Process Automation.Our Intelligent Automation Practice Areas include
                      </p>
                   </div>
                </div>
@@ -551,7 +574,7 @@ ul.nav li.dropdown:hover ul.dropdown-menu {
                      <div class="process__vline-right"></div>
                      <div class="col-block process__col" data-item="1" data-aos="fade-up">
                         <div class="process__text">
-                           <h4 style="color: white"><b>Robotic Process Automation</b></h4>
+                           <h4 style="color: white"><span class=" services-icon"><img class="responsive" src="iconset/rpa.png"></span><b>Robotic Process Automation</b></h4>
                            </br>
                            <p class="lead" style="color: white">
                               Robotic Process Automation (RPA) is a software technology solution for the automation of business processes. RPA allows federal agencies to automate manual, repetitive and rules-based business processes in a non-intrusive way by leveraging the existing infrastructure of underlying systems (without any “rip and replacement”).An RPA automation solution provides your agency with the following benefits.
@@ -572,7 +595,7 @@ ul.nav li.dropdown:hover ul.dropdown-menu {
                      </div>
                      <div class="col-block process__col" data-item="2" data-aos="fade-up">
                         <div class="process__text">
-                           <h4 style="color: white"><b>Machine Learning</b></h4>
+                           <h4 style="color: white"><span class=" services-icon"><img class="responsive" src="iconset/ml.png"></span><b>Machine Learning</b></h4>
                            </br>
                            <p class="lead" style="color: white">
                               Federal agencies are awash with data. Machine learning (ML) applies statistical techniques to these large data sets by looking for patterns and then generates an implementation code (called Model) that lets agencies recognize those patterns. 
@@ -580,20 +603,20 @@ ul.nav li.dropdown:hover ul.dropdown-menu {
                            <ul class="no-margin" style="padding-left: 30px">
                               <li style="color: red"><p class="lead" style="color: white">Our ML solutions include an iterative software development and model management. We have deep expertise in configuring and provisioning environments for training and serving machine learning models.</p> </li>
                               <li style="color: red"><p class="lead" style="color: white">Our ML models can be deployed using Command Line Interface (CLI) or Software Development Kits (SDK). DevOps teams can integrate the CLI to automation while developers consume the SDK from IDEs such as Jupyter Notebooks, VS Code, or PyCharm.</p></li>
-                              <li style="color: red"><p class="lead" style="color: white">Our ML solutions are built using enterprise automated machine learning platforms such as Data Robot and H2O.Ai as well as custom development using Python or Jupyter.</p></li>
+                              <li style="color: red"><p class="lead" style="color: white">Our ML solutions are built using enterprise automated machine learning platforms such as Azure ML Studio, Data Robot and H2O.Ai as well as custom development using R, Python or Jupyter.</p></li>
                            </ul>
                         </div>
                      </div>
                      <div class="col-block process__col" data-item="3" data-aos="fade-up">
                         <div class="process__text">
-                           <h4 style="color: white"><b>Artificial Intelligence (AI)</b></h4>
+                           <h4 style="color: white"><span class=" services-icon"><img class="responsive" src="iconset/ai.png"></span><b>Artificial Intelligence (AI)</b></h4>
                            </br>
                            <p class="lead" style="color: white">
                               Federal agencies missions which include citizen-facing roles like health and social services, border services, revenue, pensions, and social security, Artificial Intelligence (AI) can really boost the citizen satisfaction and help scale the needs with reduced costs and greater efficiency. Anika Systems AI solutions deliver value at scale by setting up an automation ecosystem, bringing in operational excellence and implementing use cases. Our AI solutions include
                            </p>
                            <ul class="no-margin" style="padding-left: 30px">
                               <li style="color: red"><p class="lead" style="color: white">AI maturity assessment</p></li>
-                              <li style="color: red"><p class="lead" style="color: white">Center of Excellence setup</p> </li>
+                              <li style="color: red"><p class="lead" style="color: white">Center of Excellence(CoE) setup</p> </li>
                               <li style="color: red"><p class="lead" style="color: white">Use case discovery</p></li>
                               <li style="color: red"><p class="lead" style="color: white">Cognitive Solutions like Sentiment Analysis, Image Analytics and Speech Recognition</p></li>
                               <li style="color: red"><p class="lead" style="color: white">Building Chabot frameworks</p></li>
@@ -611,7 +634,7 @@ ul.nav li.dropdown:hover ul.dropdown-menu {
             <div class="container">
                <div class="row section-header" data-aos="fade-up">
                   <div class="col-full">
-                     <h1 class="display-1" style="color:white">Application Development</h1>
+                     <h1 class="display-1" style="color:white"><span class=" services-icon"><img class="responsive" src="iconset/applicationdev.png"></span>Application Development</h1>
                   </div>
                </div>
                <!-- end section-header -->
@@ -620,7 +643,7 @@ ul.nav li.dropdown:hover ul.dropdown-menu {
                <div class="row" data-aos="fade-up">
                   <div class="col-full">
                      <p class="lead" style="color: white">
-                        We practice Design Thinking approach to accelerate application development lifecycle which helps our customers achieve Agile & DevSecOps adoption through ideation, quick prototypes, rapid iterations enabling faster operationalization of solutions.
+                        We practice Design Thinking approach to accelerate application development lifecycle which helps our customers achieve Agile and DevSecOps adoption through ideation, quick prototypes, rapid iterations enabling faster operationalization of solutions.
                      </p>
                   </div>
                </div>
@@ -633,7 +656,7 @@ ul.nav li.dropdown:hover ul.dropdown-menu {
                      <div class="process__vline-right"></div>
                      <div class="col-block process__col" data-item="1" data-aos="fade-up">
                         <div class="process__text">
-                           <h4 style="color: white"><b>Agile</b></h4>
+                           <h4 style="color: white"><span class=" services-icon"><img class="responsive" src="iconset/Agile.png"></span><b>Agile</b></h4>
                            </br>
                            <p class="lead" style="color: white">
                               We tailor our custom Agile Framework to each agency specific ELC methodologies by leveraging Scrum or/and Kanban methodologies and deliver new features in two-week sprint and release cycles. We use small, agile, focused sprint teams that work closely with business owners in two-week sprint and release cycles. With this approach, we get working software into users’ hands early-on in the process so that design and development teams can adjust based on feedback.
@@ -642,16 +665,16 @@ ul.nav li.dropdown:hover ul.dropdown-menu {
                      </div>
                      <div class="col-block process__col" data-item="2" data-aos="fade-up">
                         <div class="process__text">
-                           <h4 style="color: white"><b>DevSecOps</b></h4>
+                           <h4 style="color: white"><span class=" services-icon"><img class="responsive" src="iconset/DevSecOps.png"></span><b>DevSecOps</b></h4>
                            </br>
                            <p class="lead" style="color: white">
-                              Our DevSecOps (a blend of ‘development, security and ‘operations’) approach introduces a collaborative working style in the development, cyber security and operations teams, leading to rapid and continuous delivery of “security as code” software deployments. Security vulnerability scans, ARS3.1 and FISMA controls are baked in every development cycle.
+                              Our DevSecOps (a blend of ‘development, security and ‘operations’) approach introduces a collaborative working style in the development, cyber security and operations teams, leading to rapid and Continuous Integration & Continuous Delivery (CI/CD) of “security as code” software deployments. Security vulnerability scans, ARS3.1 and FISMA controls are baked in every development cycle.
                            </p>
                         </div>
                      </div>
                      <div class="col-block process__col" data-item="3" data-aos="fade-up">
                         <div class="process__text">
-                           <h4 style="color: white"><b>Microservices and APIs</b></h4>
+                           <h4 style="color: white"><span class=" services-icon"><img class="responsive" src="iconset/Microservices_API.png"></span><b>Microservices and APIs</b></h4>
                            </br>
                            <p class="lead" style="color: white">
                               We design our software by adhering to microservice based architecture wherein all components are separate microservices and integrated via REST API mesh. With this approach, each microservice can be independently tested modified and enhanced without affect any other component. 
@@ -660,7 +683,7 @@ ul.nav li.dropdown:hover ul.dropdown-menu {
                      </div>
                      <div class="col-block process__col" data-item="4" data-aos="fade-up">
                         <div class="process__text">
-                           <h4 style="color: white"><b>Infrastructure as Code</b></h4>
+                           <h4 style="color: white"><span class=" services-icon"><img class="responsive" src="iconset/infrastructureascode.png"></span><b>Infrastructure as Code</b></h4>
                            </br>
                            <p class="lead" style="color: white">
                               We incorporated Infrastructure as Code (IaC) as core tenet of our application development best practice. IaC enables DevSecOps teams to test applications in production-like environments early in the development cycle and prevent common deployment issues. IaC enforces consistency via code and prevent runtime issues caused by configuration drift or missing dependencies. By implementing IaC we deliver stable environments rapidly and at scale and avoid manual configuration of environments.
@@ -677,7 +700,7 @@ ul.nav li.dropdown:hover ul.dropdown-menu {
             <div class="container">
                <div class="row section-header" data-aos="fade-up">
                   <div class="col-full">
-                     <h1 class="display-1" style="color: white">Enterprise Modernization</h1>
+                     <h1 class="display-1" style="color: white"><span class=" services-icon"><img class="responsive" src="iconset/em.png"></span>Enterprise Modernization</h1>
                   </div>
                </div>
                <!-- end section-header -->
@@ -692,7 +715,7 @@ ul.nav li.dropdown:hover ul.dropdown-menu {
                         <li style="color: red"><p class="lead" style="color: white">Cloud Solutions (Private Cloud, Hybrid Cloud and Gov Cloud)</p></li>
                         <li style="color: red"><p class="lead" style="color: white">Application Modernization (Legacy Code Conversion, DevSecOps/DataOps using Agile/Kanban Frameworks)</p></li>
                         <li style="color: red"><p class="lead" style="color: white">Infrastructure Modernization (SDN, Hyperconverged Infrastructure)</p></li>
-                        <li style="color: red"><p class="lead" style="color: white">Digital Transformation (Intelligent intranets, Desktop as a Service, Mobility)</p></li>
+                        <li style="color: red"><p class="lead" style="color: white">Digital Transformation (Low code Platforms, Intelligent intranets, Desktop as a Service, Mobility)</p></li>
                      </ul>
                      </br>
                      <p class="lead" style="color: white">Our Approach to Enterprise Modernization involves</p>
@@ -703,7 +726,7 @@ ul.nav li.dropdown:hover ul.dropdown-menu {
                               <div class="process__vline-right"></div>
                               <div class="col-block process__col" data-item="1" data-aos="fade-up">
                                  <div class="process__text">
-                                    <h4 style="color: white"><b>Business Process Modernization</b></h4>
+                                    <h4 style="color: white"><span class=" services-icon"><img class="responsive" src="iconset/businessprocess.png"></span><b>Business Process Modernization</b></h4>
                                     </br>
                                     <ul class="no-margin" style="padding-left: 30px">
                                        <li style="color: red"><p class="lead" style="color: white">Planning -  Identify Business Processes</p> </li>
@@ -714,7 +737,7 @@ ul.nav li.dropdown:hover ul.dropdown-menu {
                               </div>
                               <div class="col-block process__col" data-item="2" data-aos="fade-up">
                                  <div class="process__text">
-                                    <h4 style="color: white"><b>Application and Infrastructure Modernization </b></h4>
+                                    <h4 style="color: white"><span class=" services-icon"><img class="responsive" src="iconset/infrastructuremodernization.png"></span><b>Application and Infrastructure Modernization </b></h4>
                                     </br>
                                     <ul class="no-margin" style="padding-left: 30px">
                                        <li style="color: red"><p class="lead" style="color: white">Planning -  Analyzing Legacy Code, software and hardware</p> </li>
@@ -739,7 +762,7 @@ ul.nav li.dropdown:hover ul.dropdown-menu {
             <div class="container">
                <div class="row section-header" data-aos="fade-up">
                   <div class="col-full">
-                     <h1 class="display-1" style="color: white">Cloud Engineering</h1>
+                     <h1 class="display-1" style="color: white"><span class=" services-icon"><img class="responsive" src="iconset/cloudengineering.png"></span>Cloud Engineering</h1>
                   </div>
                </div>
                <!-- end section-header -->
@@ -769,7 +792,7 @@ ul.nav li.dropdown:hover ul.dropdown-menu {
                               <div class="process__vline-right"></div>
                               <div class="col-block process__col" data-item="1" data-aos="fade-up">
                                  <div class="process__text">
-                                    <h4 style="color: white"><b>Discover</b></h4>
+                                    <h4 style="color: white"><span class=" services-icon"><img class="responsive" src="iconset/discover.png"></span><b>Discover</b></h4>
                                     </br>
                                     <ul class="no-margin" style="padding-left: 30px">
                                        <li style="color: red"><p class="lead" style="color: white">Identify Key drivers</p> </li>
@@ -780,7 +803,7 @@ ul.nav li.dropdown:hover ul.dropdown-menu {
                               </div>
                               <div class="col-block process__col" data-item="1" data-aos="fade-up">
                                  <div class="process__text">
-                                    <h4 style="color: white"><b>Assess</b></h4>
+                                    <h4 style="color: white"><span class=" services-icon"><img class="responsive" src="iconset/Assess.png"></span><b>Assess</b></h4>
                                     </br>
                                     <ul class="no-margin" style="padding-left: 30px">
                                        <li style="color: red"><p class="lead" style="color: white">Establish framework</p> </li>
@@ -791,7 +814,7 @@ ul.nav li.dropdown:hover ul.dropdown-menu {
                               </div>
                               <div class="col-block process__col" data-item="1" data-aos="fade-up">
                                  <div class="process__text">
-                                    <h4 style="color: white"><b>Plan</b></h4>
+                                    <h4 style="color: white"><span class=" services-icon"><img class="responsive" src="iconset/Plan.png"></span><b>Plan</b></h4>
                                     </br>
                                     <ul class="no-margin" style="padding-left: 30px">
                                        <li style="color: red"><p class="lead" style="color: white">Plan, estimate, prioritize</p></li>
@@ -803,7 +826,7 @@ ul.nav li.dropdown:hover ul.dropdown-menu {
                               </div>
                               <div class="col-block process__col" data-item="1" data-aos="fade-up">
                                  <div class="process__text">
-                                    <h4 style="color: white"><b>Test</b></h4>
+                                    <h4 style="color: white"><span class=" services-icon"><img class="responsive" src="iconset/Test.png"></span><b>Test</b></h4>
                                     </br>
                                     <ul class="no-margin" style="padding-left: 30px">
                         <li style="color: red"><p class="lead" style="color: white">Remediate/Migrate Apps</p></li>
@@ -1072,7 +1095,7 @@ ul.nav li.dropdown:hover ul.dropdown-menu {
                <!-- Contact -->
                <div class="col-sm-4 mt30-xs">
                   <h5 class="heading-1 mb20" style="color: black"><b>Contact Us</b></h5>
-                  <h4 class="mb15" style="color: black"><b>161 Fort Evans Rd NE,<br> Suite 250,Leesburg VA 20176<b></h4>
+                <h5 class="mb15" style="color: black"><strong class="text-switch" style="color: black">161 Fort Evans Rd NE,<br> Suite 250,Leesburg VA 20176 </strong></h5>
                   <h5 class="mb15" style="color: black"><strong class="text-switch" style="color: black">Email: info@anikasystems.com </strong></h5>
                   <h5 class="mb15" style="color: black"><strong class="text-switch" style="color: black">Phone: +1 703-244-0158</strong></h5>
                  
@@ -1081,7 +1104,7 @@ ul.nav li.dropdown:hover ul.dropdown-menu {
             </div>
             <div class="row">
                <div class="col-sm-12 text-center">
-                  <h4 class="mb15" style="color: black"><strong class="text-switch" style="color: black">Anika Systems © 2019</strong></h5>
+                  <h5 class="mb15" style="color: black"><strong class="text-switch" style="color: black">Anika Systems © 2019</strong></h5>
                 
                </div>
                <!-- /.column -->
@@ -1090,6 +1113,13 @@ ul.nav li.dropdown:hover ul.dropdown-menu {
          </div>
          <!-- /.container -->
       </footer>
+      <!-- <script type="text/javascript">
+          $('.nav a').on('click', function(){
+            $(".btn-navbar").click(); //bootstrap 2.x
+            $(".navbar-toggle").click(); //bootstrap 3.x by Richard
+            this.forceUpdate({});
+        });
+      </script> -->
       <script src="js/jquery-3.2.1.min.js"></script>
       <script src="js/plugins.js"></script>
       <script src="js/main2.js"></script>
