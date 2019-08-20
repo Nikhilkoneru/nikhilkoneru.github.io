@@ -121,11 +121,6 @@ if (typeof sr == 'undefined') {
         delay: 50
     });
 }
-Royal_Preloader.config({
-    onComplete: function () {
-        triggerReveals();
-    }
-});
 function triggerReveals() {
     sr.reveal('.bottomReveal', {
         origin: 'bottom'
