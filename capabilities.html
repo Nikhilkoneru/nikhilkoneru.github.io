@@ -26,6 +26,7 @@
       <script type="text/javascript" src="js/parallax.min.js"></script>
       <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:700i" rel="stylesheet">
       <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+      <link href="css/jquery.smartmenus.bootstrap.css" rel="stylesheet">
 
       <!-- Royal Preloader -->
       <style type="text/css">
@@ -336,6 +337,60 @@
    width: auto;
    height: 50px;
 }
+.dropdown-menu > li > a {
+         display: block;
+         padding: 3px 10px;
+         clear: both;
+         font-weight: 550;
+         line-height: 1.42857;
+         color: black!important;
+         white-space: nowrap;
+         font-size: 14px;
+         }
+         .navbar-nav>li>.dropdown-menu {
+         margin-top: 0px;
+         position: absolute;
+         z-index: 0px;
+         padding-top: 10px;
+         }
+         .dropdown-menu {
+         background-color: #fff!important;
+         border: 0px;
+         border-radius: 0px;
+         min-width: 150px;
+         box-shadow: none;
+         padding: 12px 0;
+         }
+         ul.nav li.dropdown:hover ul.dropdown-menu {
+         display: block;
+         }
+         .colorbox{
+         font-weight: bold!important;
+         font-family: font-family: 'Montserrat', sans-serif!important;
+         }
+         .nav >a:focus, .nav>a:hover, .colorbox:focus, .colorbox:hover {
+         background-color: red!important;
+         color: white!important;
+         border-color: none;
+         }
+
+.navbar-nav>li>.dropdown-menu {
+    
+    position: absolute;
+    z-index: 0px;
+    padding: 0px;
+    min-width: 15vw!important;
+}
+.navbar-nav .dropdown-menu > li > a {
+    white-space: normal;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    position: relative;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
 
 
       </style>
@@ -372,12 +427,75 @@
                   <!-- Collect the nav links, forms, and other content for toggling -->
                   <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                      <ul class="nav navbar-nav navbar-right">
-                        <li><a  class="hvr-underline-from-center" href="index.html" data-id="home" style="color: white;">Home</a></li>
                         <li><a  class="hvr-underline-from-center" href="index.html#approach" data-id="home" style="color: white;"><b>Approach</b></a></li>
-                        <li><a  class="hvr-underline-from-center" href="capabilities.html" data-id="home" style="color: white;"><b>What We Do</b></a></li>
-                         <li><a  class="hvr-underline-from-center" href="capabilities.html#techspan" data-id="home" style="color: white;"><b>Technologies</b></a></li>
+                        <li>
+                           <a class="hvr-underline-from-center" href="#">What We Do<span class="caret"></span></a>
+                           <ul class="dropdown-menu">
+                              <li>
+                                 <a class="colorbox" href="capabilities.html">Capabilities<span class="caret"></span></a>
+                                 <ul class="dropdown-menu">
+                                    <li>
+                                       <a class="colorbox" href="#">Data and Analytics <span class="caret"></span></a>
+                                       <ul class="dropdown-menu">
+                                          <li><a class="colorbox" href="#">Data Strategy</a></li>
+                                          <li><a class="colorbox" href="#">Data Governance</a></li>
+                                          <li><a class="colorbox" href="#">Data Science</a></li>
+                                          <li><a class="colorbox" href="#">Visual Analytics</a></li>
+                                          <li><a class="colorbox" href="#">Data Engineering</a></li>
+                                          <li><a class="colorbox" href="#">Data Advisory Services</a></li>
+                                       </ul>
+                                    </li>
+                                    <li>
+                                       <a class="colorbox" href="#">Intelligent Automation <span class="caret"></span></a>
+                                       <ul class="dropdown-menu">
+                                          <li><a class="colorbox" href="#">Robotic Process Automation</a></li>
+                                          <li><a class="colorbox" href="#">Machine Learning</a></li>
+                                          <li><a class="colorbox" href="#">Artificial Intelligence (AI)</a></li>
+                                       </ul>
+                                    </li>
+                                    <li>
+                                       <a class="colorbox" href="#">Application Development<span class="caret"></span></a>
+                                       <ul class="dropdown-menu">
+                                          <li><a class="colorbox" href="#">Agile</a></li>
+                                          <li><a class="colorbox" href="#">DevSecOps</a></li>
+                                          <li><a class="colorbox" href="#">Microservices and APIs</a></li>
+                                          <li><a class="colorbox" href="#">Infrastructure as Code</a></li>
+                                       </ul>
+                                    </li>
+                                    <li>
+                                       <a class="colorbox" href="#">IT Modernization<span class="caret"></span></a>
+                                       <ul class="dropdown-menu">
+                                          <li><a class="colorbox" href="#">Business Process Modernization</a></li>
+                                          <li><a class="colorbox" href="#">Application and Infrastructure Modernization</a></li>
+                                       </ul>
+                                    </li>
+                                    <li>
+                                       <a class="colorbox" href="#">Cloud Engineering<span class="caret"></span></a>
+                                       <ul class="dropdown-menu">
+                                          <li><a class="colorbox" href="#">Discover</a></li>
+                                          <li><a class="colorbox" href="#">Assess</a></li>
+                                          <li><a class="colorbox" href="#">Plan</a></li>
+                                          <li><a class="colorbox" href="#">Test</a></li>
+                                          <li><a class="colorbox" href="#">Deploy</a></li>
+                                       </ul>
+                                    </li>
+                                 </ul>
+                              </li>
+                              <li>
+                                 <a class="colorbox" href="#">Technologies<span class="caret"></span></a>
+                                 <ul class="dropdown-menu">
+                                    <li><a class="colorbox" href="#">Microsoft Azure</a></li>
+                                    <li><a class="colorbox" href="#">Cloud Bees</a></li>
+                                    <li><a class="colorbox" href="#">UI Path</a></li>
+                                    <li><a class="colorbox" href="#">Red Hat</a></li>
+                                    <li><a class="colorbox" href="#">Pivotal GreenPlum</a></li>
+                                    <li><a class="colorbox" href="#">Tableau</a></li>
+                                 </ul>
+                              </li>
+                              <li><a class="colorbox" href="#">Contracts</a></li>
+                           </ul>
+                        </li>
                         <li><a class="hvr-underline-from-center" href="whoweare.html" data-id="home" style="color: white;">Who We Are</a></li>
-                        <li><a class="hvr-underline-from-center" href="contracts.html" data-id="home" style="color: white;">Contracts</a></li>
                         <li><a class="hvr-underline-from-center" href="careers.html" data-id="home" style="color: white;">Careers</a></li>
                         <li><button class="btn btn-outline-success my-2 my-sm-0" onclick="location.href='contact.html'" type="submit">Contact</button></li>
                      </ul>
@@ -1137,5 +1255,7 @@
   }
 });
       </script>
+      <script type="text/javascript" src="js/jquery.smartmenus.js"></script>
+      <script type="text/javascript" src="js/jquery.smartmenus.bootstrap.js"></script>
    </body>
 </html>
