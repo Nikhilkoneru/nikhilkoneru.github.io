@@ -632,6 +632,89 @@ html{
     margin-top: 2px;
     margin-bottom: 2px;
 }
+.main-menu-btn {
+  position: relative;
+  display: inline-block;
+  width: 28px;
+  height: 28px;
+  text-indent: 28px;
+  white-space: nowrap;
+  overflow: hidden;
+  cursor: pointer;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+/* hamburger icon */
+.main-menu-btn-icon, .main-menu-btn-icon:before, .main-menu-btn-icon:after {
+  position: absolute;
+  top: 50%;
+  left: 2px;
+  height: 2px;
+  width: 24px;
+  background: white;
+  -webkit-transition: all 0.25s;
+  transition: all 0.25s;
+}
+.main-menu-btn-icon:before {
+  content: '';
+  top: -7px;
+  left: 0;
+}
+.main-menu-btn-icon:after {
+  content: '';
+  top: 7px;
+  left: 0;
+}
+/* x icon */
+#main-menu-state:checked ~ .main-menu-btn .main-menu-btn-icon {
+  height: 0;
+  background: transparent;
+}
+#main-menu-state:checked ~ .main-menu-btn .main-menu-btn-icon:before {
+  top: 0;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+#main-menu-state:checked ~ .main-menu-btn .main-menu-btn-icon:after {
+  top: 0;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+/* hide menu state checkbox (keep it visible to screen readers) */
+#main-menu-state {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  overflow: hidden;       
+  clip: rect(1px,1px,1px,1px);
+}
+/* hide the menu in mobile view */
+#main-menu-state:not(:checked) ~ #main-menu {
+  display: none;
+}
+#main-menu-state:checked ~ #main-menu {
+  display: block;
+}
+@media (min-width: 768px) {
+  /* hide the button in desktop view */
+  .main-menu-btn {
+    position: absolute;
+    top: -99999px;
+  }
+  /* always show the menu in desktop view */
+  #main-menu-state:not(:checked) ~ #main-menu {
+    display: block;
+  }
+}
+
+
+@media (min-width: 768px){
+.right {
+    float: right!important;
+     margin-right: 50px!important;
+}}
 
    </style>
    <body class="" data-spy="scroll" data-target=".navbar" data-offset="70">
@@ -642,86 +725,57 @@ html{
                <div class="row">
                   <!-- Brand and toggle get grouped for better mobile display -->
                   <div class="navbar-header" >
-                     <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-                     <span class="sr-only">Toggle navigation</span>
-                     <span class="icon-bar"></span>
-                     <span class="icon-bar"></span>
-                     <span class="icon-bar"></span>
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="true">
+                     <input id="main-menu-state" type="checkbox" />
+<label class="main-menu-btn" for="main-menu-state">
+  <span class="main-menu-btn-icon"></span> Toggle main menu visibility
+</label>
                      </button>
                      <a class="navbar-brand scroll-link" href="index.html" data-id="home"><img style="position: absolute; top: 8px;" src="images/Logo.png" width="200px"></a>
                   </div>
                   <!-- Collect the nav links, forms, and other content for toggling -->
                   <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                     <ul class="nav navbar-nav navbar-right">
+                     <ul class="nav navbar-nav right">
                         <li><a  class="hvr-underline-from-center" href="index.html#approach" data-id="home" style="color: white;"><b>Approach</b></a></li>
-                        <li>
-                           <a class="hvr-underline-from-center" href="#">What We Do<span class="caret"></span></a>
+                       <li>
+                           <a class="hvr-underline-from-center" href="capabilities.html">What We Do<span class="caret"></span></a>
                            <ul class="dropdown-menu">
                               <li>
                                  <a class="colorbox" href="capabilities.html">Capabilities<span class="caret"></span></a>
                                  <ul class="dropdown-menu">
                                     <li>
-                                       <a class="colorbox" href="#">Data and Analytics <span class="caret"></span></a>
-                                       <ul class="dropdown-menu">
-                                          <li><a class="colorbox" href="#">Data Strategy</a></li>
-                                          <li><a class="colorbox" href="#">Data Governance</a></li>
-                                          <li><a class="colorbox" href="#">Data Science</a></li>
-                                          <li><a class="colorbox" href="#">Visual Analytics</a></li>
-                                          <li><a class="colorbox" href="#">Data Engineering</a></li>
-                                          <li><a class="colorbox" href="#">Data Advisory Services</a></li>
-                                       </ul>
+                                       <a class="colorbox" href="capabilities.html#capabilitiesspan">Data and Analytics</a>
                                     </li>
                                     <li>
-                                       <a class="colorbox" href="#">Intelligent Automation <span class="caret"></span></a>
-                                       <ul class="dropdown-menu">
-                                          <li><a class="colorbox" href="#">Robotic Process Automation</a></li>
-                                          <li><a class="colorbox" href="#">Machine Learning</a></li>
-                                          <li><a class="colorbox" href="#">Artificial Intelligence (AI)</a></li>
-                                       </ul>
+                                       <a class="colorbox" href="capabilities.html#iaspan">Intelligent Automation</a>
                                     </li>
                                     <li>
-                                       <a class="colorbox" href="#">Application Development<span class="caret"></span></a>
-                                       <ul class="dropdown-menu">
-                                          <li><a class="colorbox" href="#">Agile</a></li>
-                                          <li><a class="colorbox" href="#">DevSecOps</a></li>
-                                          <li><a class="colorbox" href="#">Microservices and APIs</a></li>
-                                          <li><a class="colorbox" href="#">Infrastructure as Code</a></li>
-                                       </ul>
+                                       <a class="colorbox" href="capabilities.html#apdspan">Application Development</a>
                                     </li>
                                     <li>
-                                       <a class="colorbox" href="#">IT Modernization<span class="caret"></span></a>
-                                       <ul class="dropdown-menu">
-                                          <li><a class="colorbox" href="#">Business Process Modernization</a></li>
-                                          <li><a class="colorbox" href="#">Application and Infrastructure Modernization</a></li>
-                                       </ul>
+                                       <a class="colorbox" href="capabilities.html#emspan">IT Modernization</a>
+                                       
                                     </li>
                                     <li>
-                                       <a class="colorbox" href="#">Cloud Engineering<span class="caret"></span></a>
-                                       <ul class="dropdown-menu">
-                                          <li><a class="colorbox" href="#">Discover</a></li>
-                                          <li><a class="colorbox" href="#">Assess</a></li>
-                                          <li><a class="colorbox" href="#">Plan</a></li>
-                                          <li><a class="colorbox" href="#">Test</a></li>
-                                          <li><a class="colorbox" href="#">Deploy</a></li>
-                                       </ul>
+                                       <a class="colorbox" href="capabilities.html#csspan">Cloud Engineering</a>
                                     </li>
                                  </ul>
                               </li>
                               <li>
-                                 <a class="colorbox" href="#">Technologies<span class="caret"></span></a>
+                                 <a class="colorbox" href="capabilities.html#techspan">Technologies<span class="caret"></span></a>
                                  <ul class="dropdown-menu">
-                                    <li><a class="colorbox" href="#">Microsoft Azure</a></li>
-                                    <li><a class="colorbox" href="#">Cloud Bees</a></li>
-                                    <li><a class="colorbox" href="#">UI Path</a></li>
-                                    <li><a class="colorbox" href="#">Red Hat</a></li>
-                                    <li><a class="colorbox" href="#">Pivotal GreenPlum</a></li>
-                                    <li><a class="colorbox" href="#">Tableau</a></li>
+                                    <li><a class="colorbox" href="capabilities.html#techspan">Microsoft Azure</a></li>
+                                    <li><a class="colorbox" href="capabilities.html#cloudbees">Cloud Bees</a></li>
+                                    <li><a class="colorbox" href="capabilities.html#uipath">UI Path</a></li>
+                                    <li><a class="colorbox" href="capabilities.html#redhat">Red Hat</a></li>
+                                    <li><a class="colorbox" href="capabilities.html#pg">Pivotal GreenPlum</a></li>
+                                    <li><a class="colorbox" href="capabilities.html#tu">Tableau</a></li>
                                  </ul>
                               </li>
-                              <li><a class="colorbox" href="#">Contracts</a></li>
                            </ul>
                         </li>
                         <li><a class="hvr-underline-from-center" href="whoweare.html" data-id="home" style="color: white;">Who We Are</a></li>
+                        <li><a class="hvr-underline-from-center" href="contracts.html" data-id="home" style="color: white;">Contracts</a></li>
                         <li><a class="hvr-underline-from-center" href="careers.html" data-id="home" style="color: white;">Careers</a></li>
                         <li><button class="btn btn-outline-success my-2 my-sm-0" onclick="location.href='contact.html'" type="submit">Contact</button></li>
                      </ul>
