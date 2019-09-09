@@ -163,6 +163,7 @@ a.thumbnail.active, a.thumbnail:focus, a.thumbnail:hover {
 .navbar-default .navbar-toggle {
     border-color: #ED2225;
     background-color: #ED2225;
+    color:white;
 }
 
 .navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
