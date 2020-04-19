@@ -28,30 +28,32 @@ function submitForm() {
     // Initiate Variables With Form Content
     $.ajax({
         type: "POST",
-        url: "http://127.0.0.1:8000/contact",
-        data: $("#contactForm").serialize(),
+        url: "http://127.0.0.1:8081/api/contact",
+        data : JSON.stringify($("#contactForm").serializeArray()),
+        contentType : 'application/json',
+        crossDomain: true,
         success: function(text) {
-            console.log(text);
-            if (text) {
-                $("#contactForm")[0].reset();
-                $("#msgSubmit").removeClass().addClass("h4 text-success").text("Success");
-            } else {
-                $("#contactForm").removeClass().addClass('shake animated').one(
-        'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend',
-            function() {
-            $(this).removeClass();
-            });
-            $("#msgSubmit").removeClass().addClass("h4 text-danger").text("Failed to submit");
-            }
+                formSuccess();
+        },
+        error: function(text) {
+            formError();
+            submitMSG(false, "Error please submit again");
         }
     });
 }
+
+
 function formSuccess() {
-   
-    submitMSG(true, "Message Submitted!");
+    $("#contactForm")[0].reset();
+    submitMSG(true, "Message Submitted!")
+
 }
 function formError() {
-    
+    $("#contactForm").removeClass().addClass('shake animated').one(
+        'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend',
+        function() {
+            $(this).removeClass();
+        });
 }
 function submitMSG(valid, msg) {
     if (valid) {
@@ -59,8 +61,9 @@ function submitMSG(valid, msg) {
     } else {
         var msgClasses = "h4 text-danger";
     }
-    
+    $("#msgSubmit").removeClass().addClass(msgClasses).text(msg);
 }
+
 
 /* ---- our work gallery ---- */
 $('#work').magnificPopup({
